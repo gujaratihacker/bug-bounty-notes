@@ -1,0 +1,55 @@
+# Emails
+org:(org_name_in_github) "@gmail.com"
+org:(org_name_in_github) "@yahoo.com"
+org:(org_name_in_github) "@hotmail.com"
+org:(org_name_in_github) "@(your_target_email)"
+
+# Tokens / Secrets / API Keys
+org:(org_name_in_github) "AWS_SECRET_ACCESS_KEY"
+org:(org_name_in_github) "AWS_ACCESS_KEY_ID"
+org:(org_name_in_github) "Authorization: Bearer"
+org:(org_name_in_github) "api_key" language:json
+org:(org_name_in_github) "secret" language:yaml
+org:(org_name_in_github) "PRIVATE_KEY"
+org:(org_name_in_github) "api_key"
+org:(org_name_in_github) "Token"
+org:(org_name_in_github) "secret"
+org:(org_name_in_github) "client_secret"
+org:(org_name_in_github) "password" language:env
+org:(org_name_in_github) filename:.env
+org:(org_name_in_github) filename:.npmrc
+org:(org_name_in_github) filename:.dockercfg
+org:(org_name_in_github) filename:.bash_history
+org:(org_name_in_github) "BEGIN RSA PRIVATE KEY"
+
+# Config Files
+org:(org_name_in_github) filename:config.js
+org:(org_name_in_github) filename:settings.py
+org:(org_name_in_github) filename:application.properties
+org:(org_name_in_github) filename:credentials.json
+org:(org_name_in_github) filename:firebase.json
+
+# GitHub Actions
+org:(org_name_in_github) filename:.github/workflows
+org:(org_name_in_github) "secrets." language:yaml
+org:(org_name_in_github) "GITHUB_TOKEN"
+org:(org_name_in_github) "CI_SECRET"
+
+# Hardcoded credentials (in code)
+org:(org_name_in_github) "username" "password"
+org:(org_name_in_github) "username"
+org:(org_name_in_github) "password"
+org:(org_name_in_github) "db_password"
+org:(org_name_in_github) "mongodb+srv://"
+org:(org_name_in_github) "postgres://"
+org:(org_name_in_github) "mysql://"
+
+# If you want to find Admin Panels
+org:(org_name_in_github) "admin"
+org:(org_name_in_github) "admin" in:url
+org:(org_name_in_github) "admin" in:path
+org:(org_name_in_github) "dashboard" in:url
+org:(org_name_in_github) "control panel"
+org:(org_name_in_github) "login" filename:config.js
+org:(org_name_in_github) "admin_url"
+org:(org_name_in_github) "site_url"
