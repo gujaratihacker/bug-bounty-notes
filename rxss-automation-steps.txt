@@ -1,0 +1,17 @@
+subfinder -dL domain.txt -o sub1.txt
+cat domain.txt | assetfinder -subs-only > sub2.txt
+
+cat sub1.txt sub2.txt > subdomains.txt
+cat subdomains.txt | anew >> final_subdomains.txt
+
+cat final_subdomains.txt | httpx -o alive_subdomains.txt
+
+cat alive_subdomains.txt | waybackurls >> urls1.txt
+cat alive_subdomains.txt | gau >> urls2.txt
+katana -list alive_subdomains.txt -o urls3.txt
+
+cat urls1.txt urls2.txt urls3.txt >> all_urls.txt
+cat all_urls.txt | uro >> final_urls.txt
+
+cat final_urls.txt | gf xss >> XSS.txt
+cat XSS.txt | kxss
