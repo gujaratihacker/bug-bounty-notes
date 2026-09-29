@@ -15,3 +15,15 @@ cat all_urls.txt | uro >> final_urls.txt
 
 cat final_urls.txt | gf xss >> XSS.txt
 cat XSS.txt | kxss
+
+
+#2--------------------------------------------------------
+subenum -d target.com -r 
+
+
+cat subdomians.txt | katana -jc >> Endpoints.txt
+cat subdomians.txt | waybackurls >> Endpoints.txt
+cat Enpoints.txt | uro >> Endpoints_Final.txt
+
+cat Endpoints_Final.txt | gf xss >> XSS.txt
+cat XSS.txt | Gxss -p khXSS -o XSS_Reflected.txt
